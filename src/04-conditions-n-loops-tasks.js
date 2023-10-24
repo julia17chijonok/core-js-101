@@ -27,8 +27,15 @@
  *  21 => 'Fizz'
  *
  */
-function getFizzBuzz(/* num */) {
-  throw new Error('Not implemented');
+function getFizzBuzz(num) {
+  if (num % 3 === 0 && num % 5 === 0) {
+    return 'FizzBuzz';
+  } else if (num % 3 === 0) {
+    return 'Fizz';
+  } else if (num % 5 === 0) {
+    return 'Buzz';
+  }
+  return num;
 }
 
 
@@ -308,8 +315,30 @@ function getDigitalRoot(num) {
  *   '{)' = false
  *   '{[(<{[]}>)]}' = true
  */
-function isBracketsBalanced(/* str */) {
-  throw new Error('Not implemented');
+function isBracketsBalanced(str) {
+  const stack = [];
+  const brackets = {
+    ')': '(',
+    ']': '[',
+    '}': '{',
+  };
+
+  function isCloseBracket(ch) {
+    return [']', '}', ')'].indexOf(ch) > -1;
+  }
+
+  for (let i = 0; i < str.length; i++) {
+    const currentElement = str[i];
+
+    if (isCloseBracket(currentElement)) {
+      if (brackets[currentElement] !== stack.pop()) {
+        return false;
+      }
+    } else {
+      stack.push(currentElement);
+    }
+  }
+  return stack.length === 0;
 }
 
 
