@@ -112,8 +112,8 @@ function getLinearEquationRoot(a, b) {
  *   (0,1) (0,1)     => 0
  *   (0,1) (1,2)     => 0
  */
-function getAngleBetweenVectors(x1, y1, x2, y2) {
-  
+function getAngleBetweenVectors(/* x1, y1, x2, y2 */) {
+  throw new Error('Not implemented');
 }
 
 /**
@@ -186,8 +186,8 @@ function getParallelepipedDiagonal(a, b, c) {
  *   1678, 2  => 1700
  *   1678, 3  => 2000
  */
-function roundToPowerOfTen(num, pow) {
-  
+function roundToPowerOfTen(/* num, pow */) {
+  throw new Error('Not implemented');
 }
 
 /**
