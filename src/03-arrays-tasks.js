@@ -35,14 +35,8 @@ function findElement(arr, value) {
  *    2 => [ 1, 3 ]
  *    5 => [ 1, 3, 5, 7, 9 ]
  */
-function generateOdds(len) {
-  const arr = [1];
-  let num = 1;
-  for (let i = 1; i < len; i + 1) {
-    num += 2;
-    arr.push(num);
-  }
-  return arr;
+function generateOdds(/* len */) {
+  throw new Error('Not implemented');
 }
 
 
@@ -496,12 +490,8 @@ function getIdentityMatrix(/* n */) {
  *     0, 100 => [ 0, 1, 2, ..., 100 ]
  *     3, 3   => [ 3 ]
  */
-function getIntervalArray(start, end) {
-  const arr = [];
-  for (let i = start; i <= end; i + 1) {
-    arr.push(i);
-  }
-  return arr;
+function getIntervalArray(/* start, end */) {
+  throw new Error('Not implemented');
 }
 
 /**
