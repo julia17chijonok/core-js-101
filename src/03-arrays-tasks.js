@@ -52,11 +52,8 @@ function generateOdds(/* len */) {
  *    [0, 1, 2, 3, 4, 5] => [0, 1, 2, 3, 4, 5,   0, 1, 2, 3, 4, 5]
  *    [] => []
  */
-function doubleArray(arr) {
-  arr.forEach((el) => {
-    arr.push(el);
-  });
-  return arr;
+function doubleArray(/* arr */) {
+  throw new Error('Not implemented');
 }
 
 
@@ -434,25 +431,8 @@ function toStringList(arr) {
  *      { country: 'Russia',  city: 'Saint Petersburg' }
  *    ]
  */
-function sortCitiesArray(arr) {
-  arr.sort((a, b) => {
-    if (a.country > b.country) {
-      return 1;
-    }
-    if (a.country < b.country) {
-      return -1;
-    }
-    if (a.country === b.country) {
-      if (a.city > b.city) {
-        return 1;
-      }
-      if (a.city < b.city) {
-        return -1;
-      }
-      return 0;
-    }
-    return arr;
-  });
+function sortCitiesArray(/* arr */) {
+  throw new Error('Not implemented');
 }
 
 /**
