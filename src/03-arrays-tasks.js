@@ -21,7 +21,7 @@
  *    [0, 1, 2, 3, 4, 5], 5    => 5
  */
 function findElement(arr, value) {
-  return arr.includes(value);
+  return arr.indexOf(value);
 }
 
 /**
@@ -103,12 +103,7 @@ function getArrayOfStrings(arr) {
  *    [ false, 0, NaN, '', undefined ]   => [ ]
  */
 function removeFalsyValues(arr) {
-  const res = arr.filter((el) => {
-    if (el) {
-      return el;
-    }
-    return res;
-  });
+  return arr.filter((elem) => elem);
 }
 
 /**
